@@ -123,28 +123,35 @@ public class Books extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(26, 83, 92));
         jPanel1.setBorder(new javax.swing.border.LineBorder(java.awt.SystemColor.controlHighlight, 1, true));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 191, 120));
         jLabel1.setText("Title:");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Script MT Bold", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 203, 68));
         jLabel2.setText("Adding Book");
 
-        bName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        bName.setBackground(new java.awt.Color(255, 238, 169));
+        bName.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 15)); // NOI18N
         bName.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 191, 120));
         jLabel3.setText("Author:");
 
-        authName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        authName.setBackground(new java.awt.Color(255, 238, 169));
+        authName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         authName.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 191, 120));
         jLabel4.setText("Published Date:");
 
-        genreCbox.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        genreCbox.setBackground(new java.awt.Color(255, 238, 169));
+        genreCbox.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         genreCbox.setForeground(new java.awt.Color(51, 51, 51));
         genreCbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,9 +159,12 @@ public class Books extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 191, 120));
         jLabel5.setText("Genre:");
 
+        date_published.setBackground(new java.awt.Color(255, 238, 169));
+        date_published.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         date_published.setForeground(new java.awt.Color(51, 51, 51));
         date_published.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         date_published.setText("YYYY-MM-DD");
@@ -164,7 +174,7 @@ public class Books extends javax.swing.JFrame {
             }
         });
 
-        addBtn.setBackground(new java.awt.Color(0, 153, 255));
+        addBtn.setBackground(new java.awt.Color(0, 109, 7));
         addBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         addBtn.setForeground(new java.awt.Color(255, 255, 255));
         addBtn.setBorder(null);
@@ -174,7 +184,7 @@ public class Books extends javax.swing.JFrame {
             }
         });
 
-        delBtn.setBackground(new java.awt.Color(255, 51, 51));
+        delBtn.setBackground(new java.awt.Color(178, 43, 5));
         delBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         delBtn.setForeground(new java.awt.Color(255, 255, 255));
         delBtn.setBorder(null);
@@ -184,7 +194,7 @@ public class Books extends javax.swing.JFrame {
             }
         });
 
-        clearBtn.setBackground(new java.awt.Color(0, 204, 204));
+        clearBtn.setBackground(new java.awt.Color(137, 145, 189));
         clearBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         clearBtn.setForeground(new java.awt.Color(255, 255, 255));
         clearBtn.setBorder(null);
@@ -194,7 +204,7 @@ public class Books extends javax.swing.JFrame {
             }
         });
 
-        upBtn.setBackground(new java.awt.Color(51, 204, 0));
+        upBtn.setBackground(new java.awt.Color(0, 80, 184));
         upBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         upBtn.setForeground(new java.awt.Color(255, 255, 255));
         upBtn.setBorder(null);
@@ -239,9 +249,9 @@ public class Books extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bName, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -265,12 +275,14 @@ public class Books extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(upBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(26, 83, 92));
         jPanel2.setBorder(new javax.swing.border.LineBorder(java.awt.SystemColor.controlHighlight, 1, true));
 
+        booksTable.setBackground(new java.awt.Color(255, 238, 169));
+        booksTable.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         booksTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -289,7 +301,8 @@ public class Books extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(booksTable);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Script MT Bold", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 203, 68));
         jLabel6.setText("Books Inventory");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -302,7 +315,7 @@ public class Books extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(138, 138, 138)
+                        .addGap(92, 92, 92)
                         .addComponent(jLabel6)))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
@@ -312,7 +325,7 @@ public class Books extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 439, Short.MAX_VALUE)
+                .addComponent(jScrollPane1)
                 .addContainerGap())
         );
 

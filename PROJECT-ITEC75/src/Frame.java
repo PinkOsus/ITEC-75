@@ -136,26 +136,31 @@ public class Frame extends javax.swing.JFrame {
         lendRecord = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 204, 153));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(new javax.swing.border.LineBorder(java.awt.SystemColor.controlHighlight, 1, true));
-        jPanel1.setForeground(new java.awt.Color(239, 239, 239));
+        jPanel1.setBackground(new java.awt.Color(26, 83, 92));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setForeground(new java.awt.Color(255, 204, 102));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setFont(new java.awt.Font("Script MT Bold", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 203, 68));
         jLabel1.setText("Book Lending Form");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 191, 120));
         jLabel2.setText("Book Title:");
 
+        bookCbox.setBackground(new java.awt.Color(255, 238, 169));
+        bookCbox.setEditable(true);
+        bookCbox.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 15)); // NOI18N
         bookCbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bookCboxActionPerformed(evt);
             }
         });
 
-        addBookBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        addBookBtn.setBackground(new java.awt.Color(234, 166, 77));
+        addBookBtn.setFont(new java.awt.Font("Calisto MT", 1, 10)); // NOI18N
         addBookBtn.setText("EDIT BOOKS");
         addBookBtn.setToolTipText("");
         addBookBtn.setFocusable(false);
@@ -165,19 +170,29 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 191, 120));
         jLabel4.setText("Borrowers Name:");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        borrowName.setBackground(new java.awt.Color(255, 238, 169));
+        borrowName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+
+        jLabel5.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 191, 120));
         jLabel5.setText("Status");
 
+        dateBorrowed.setBackground(new java.awt.Color(255, 238, 169));
         dateBorrowed.setText("YYYY-MM-DD");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Calisto MT", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 191, 120));
         jLabel6.setText("Date Borrowed");
 
+        jPanel3.setBackground(new java.awt.Color(255, 238, 169));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
+        rad1.setFont(new java.awt.Font("Calisto MT", 1, 12)); // NOI18N
+        rad1.setForeground(new java.awt.Color(204, 0, 0));
         rad1.setText("Borrowed");
         rad1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,6 +200,8 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
+        rad2.setFont(new java.awt.Font("Calisto MT", 1, 12)); // NOI18N
+        rad2.setForeground(new java.awt.Color(51, 204, 0));
         rad2.setText("Returned");
         rad2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -210,8 +227,8 @@ public class Frame extends javax.swing.JFrame {
                 .addComponent(rad2, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
         );
 
-        subBtn.setBackground(new java.awt.Color(0, 153, 255));
-        subBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        subBtn.setBackground(new java.awt.Color(0, 109, 7));
+        subBtn.setFont(new java.awt.Font("Calisto MT", 1, 10)); // NOI18N
         subBtn.setForeground(new java.awt.Color(255, 255, 255));
         subBtn.setText("SUBMIT");
         subBtn.setToolTipText("");
@@ -222,8 +239,8 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
-        updBtn.setBackground(new java.awt.Color(0, 153, 255));
-        updBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        updBtn.setBackground(new java.awt.Color(0, 80, 184));
+        updBtn.setFont(new java.awt.Font("Calisto MT", 1, 10)); // NOI18N
         updBtn.setForeground(new java.awt.Color(255, 255, 255));
         updBtn.setText("UPDATE");
         updBtn.setToolTipText("");
@@ -234,8 +251,8 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
-        delBtn.setBackground(new java.awt.Color(0, 153, 255));
-        delBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        delBtn.setBackground(new java.awt.Color(178, 43, 5));
+        delBtn.setFont(new java.awt.Font("Calisto MT", 1, 10)); // NOI18N
         delBtn.setForeground(new java.awt.Color(255, 255, 255));
         delBtn.setText("DELETE");
         delBtn.setToolTipText("");
@@ -246,8 +263,8 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
-        clearBtn.setBackground(new java.awt.Color(0, 153, 255));
-        clearBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        clearBtn.setBackground(new java.awt.Color(137, 145, 189));
+        clearBtn.setFont(new java.awt.Font("Calisto MT", 1, 10)); // NOI18N
         clearBtn.setForeground(new java.awt.Color(255, 255, 255));
         clearBtn.setText("CLEAR");
         clearBtn.setToolTipText("");
@@ -263,37 +280,35 @@ public class Frame extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bookCbox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(borrowName)
+                    .addComponent(dateBorrowed)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bookCbox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(borrowName)
-                            .addComponent(dateBorrowed)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(delBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                        .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(subBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(delBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(subBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(updBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(updBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(addBookBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60))
+                .addGap(95, 95, 95))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -326,15 +341,18 @@ public class Frame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(delBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(26, 83, 92));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.SystemColor.controlHighlight));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Script MT Bold", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 203, 68));
         jLabel3.setText("Lending Record");
 
+        lendRecord.setBackground(new java.awt.Color(255, 238, 169));
+        lendRecord.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         lendRecord.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -363,7 +381,7 @@ public class Frame extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 512, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
